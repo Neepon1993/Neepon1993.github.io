@@ -185,12 +185,7 @@
 	住宅の売却
 	*/
 	function sellHouse() {
-		if ( house > 0 ) {
-			alert("住宅を売ります！");
-			house--;
-			incomeMoney -= 10;
-			alert("住宅を売りました！");
-			
+		if ( house > 0 ) {			
 			document.getElementById("ownHouse").innerHTML = house;
 			document.getElementById("incomeMoney").innerHTML = incomeMoney + "(/s)";
 			document.getElementById("costOfHouse").innerHTML = "金銭" + costOfHouse;
